@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/6f55b5ced1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   
+   
+   <div class="container">
+    <form action="">
+      <label for="username">Username</label>
+      <input type="text" id="username" required>
+      <label for="password">Password</label>
+      <input type="password" name="password" id="password" title="Must contains one number and one UpperCase letter and lowerCase Letter , and at least 8 or more charecters" pattern="(>=.*/d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+      <br><br>
+      <input type="submit" value="Log In">
+    </form>
+   </div>
+   <div class="message">
+    <h1>Password must contain the following:</h1>
+    <p id="letter" class="invalid">A <b>lowerCase</b>letter</p>
+    <p id="capital" class="invalid">A <b>Capital (UpperCase)</b>letter</p>
+    <p id="number" class="invalid">A <b>Number</b>letter</p>
+    <p id="length" class="invalid">Minimum <b>8</b>Charecters</p>
+   </div>
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>

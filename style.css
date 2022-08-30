@@ -1,0 +1,27 @@
+.invalid{
+    color: red;
+    padding-left: 35px;
+}
+.message{
+    display: none;
+}
+.invalid::before{
+    position:relative;
+    content: "✖";
+    margin-left: -35px;
+    padding-right: 30px;
+}
+.valid{
+    color: green;
+    padding-left: 35px;
+}
+
+.valid::before{
+    position:relative;
+    content: "✔";
+    margin-left: -35px;
+    padding-right: 30px;
+}
+
+
+
